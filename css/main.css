@@ -8,6 +8,9 @@ body{
     font-family: Arial, sans-serif;
     color: var(--COEmY);
     overflow: hidden;
+    margin: 0;
+    padding: 0;
+    width: 100%;
 }
 header{
     width: 100%; /*Para que el header ocupe todo el ancho de la pantalla*/
@@ -36,6 +39,9 @@ a{
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
 }
+a:hover{
+    text-decoration: underline;
+}
 nav .menu-icon{
     background-image: url("https://static.thenounproject.com/png/756729-200.png");
     background-repeat: no-repeat;
@@ -46,6 +52,15 @@ nav .menu-icon{
     margin-right: 20px;
     cursor: pointer;
    }
+
+nav .menu-icon:hover{
+    border: 0px double #38383d63;
+    box-shadow: 1px 1px 25px #38383d63;
+    color: #222;
+    border-radius: 50%;
+    opacity: 1;
+}
+
 nav .nav-seccion-derecha img{
     border-radius: 50px;
     margin-left: 10px;
@@ -66,12 +81,17 @@ nav .nav-seccion-derecha img{
     width: 272px;
  }
  main .main-input{
-    width: 530px;
+    width: 580px;
     margin: 0 auto;
     margin-bottom: 35px;
  }
+ main .main-input-container:hover {
+    border: 1px double #c6c6c6;
+    box-shadow: 0 1px 1px #38383d63;
+    color: #222;
+}
 main .main-input-container{
-    width: 525px;
+    width: 580px;
     border-radius: 100px;
     border: 1px solid #dfe1e5;
     display: flex;
@@ -106,7 +126,6 @@ main .main-input .micro-icon {
    }
 
    main .main-buttons {
-    border: 1px solid #f8f9fa;
     border-radius: 4px;
     color: #3c4043;
     font-family: Arial, sans-serif;
@@ -140,41 +159,39 @@ main .main-buttons button:hover {
 }
 /* -------------------------------------------------------------- */
 /* PIE DE PAGINA */
-footer{
-    color: #000000;
-}
 .google-footer {
     background-color: #f2f2f2;
     border-top: 1px solid #e4e4e4;
     color: #000000;
-    margin-top: 100px;
+    margin-top: 8%;
+    position: relative;
+    width: 100%; /* Asegura que abarque todo el ancho */
+}
 
-  }
-  
-  .footer-top {
+.footer-top {
     text-align: left;
     padding: 0px 30px;
     background-color: #f2f2f2;
     font-size: 14px;
-  }
-  
-  .footer-bottom {
+    width: 100%; /* Cambiado de 50px a 100% */
+}
+
+.footer-bottom {
     display: flex;
     justify-content: space-between;
     padding: 10px 40px;
     border-top: 1px solid #e4e4e4;
-  }
-  
-  .footer-left a,
-  .footer-right a {
+}
+
+.footer-left a,
+.footer-right a {
     color: #000000;
     text-decoration: none;
     margin-right: 20px;
     font-size: 14px;
+}
 
-  }
-  
-  .footer-left a:hover,
-  .footer-right a:hover {
+.footer-left a:hover,
+.footer-right a:hover {
     text-decoration: underline;
-  }
+}
