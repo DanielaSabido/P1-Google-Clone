@@ -28,7 +28,7 @@ header nav .nav-seccion-derecha{
     align-items: center;
 }
 nav .nav-seccion-derecha a{
-    margin-right: 10px; 
+    margin-right: 20px; 
     color: #000000;
 }
 a{
@@ -44,6 +44,8 @@ nav .menu-icon{
     background-size: contain;
     width: 25px;
     height: 25px;
+    margin-right: 20px;
+    cursor: pointer;
    }
 nav .nav-seccion-derecha img{
     border-radius: 50px;
@@ -82,4 +84,48 @@ main .main-input input{
     height: 40px;
     border: none;
     outline: none;
+}
+
+main .main-input .search-icon {
+    background-image:
+   url('https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Vector_search_icon.svg/945px-Vector_search_icon.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+}
+main .main-input .micro-icon {
+    background-image:
+   url('https://upload.wikimedia.org/wikipedia/commons/thumb/e/e8/Google_mic.svg/726px-Google_mic.svg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    width: 18px;
+    height: 18px;
+    cursor: pointer;
+   }
+
+   main .main-buttons {
+    width: 530px;
+    margin: 0 auto;
+   }
+main .main-buttons div{
+    display: inline-block;
+}
+main .main-buttons button {
+    height: 36px;
+    background-color: #f2f2f2;
+    border: 0;
+    font-size: 14px;
+    color: #5f6368;
+    border-radius: 5px;
+    padding: 0 15px;
+    margin-right: 15px;
+}
+
+main .main-buttons button:hover {
+    border: 1px double #c6c6c6;
+    box-shadow: 0 1px 1px #38383d63;
+    color: #222;
 }
